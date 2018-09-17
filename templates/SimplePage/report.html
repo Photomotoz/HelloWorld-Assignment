@@ -1,0 +1,12 @@
+{% extends 'SimplePage/base.html' %}
+
+{% block content %}
+    <h2>User Report</h2>
+    <a class="btn btn-success" role="button" href="{% url 'registration' %}">Return to Registration Page</a>
+    <div class="container">
+        <div class="row">
+            {% load django_tables2 %}
+            {% render_table users %}
+        </div>
+    </div>
+{% endblock %}
