@@ -1,11 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from .forms import RegisterForm
 from .models import Member
-
-
-def index(request):
-    return HttpResponse("Register or Login")
 
 
 def registration(request):
