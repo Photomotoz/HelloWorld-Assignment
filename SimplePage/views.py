@@ -22,3 +22,11 @@ def confirmation(request):
 
 def report(request):
     return render(request, 'SimplePage/report.html', {'users': Member.objects.all().order_by('created_at')})
+
+
+def handle_404(request):
+    return render(request, 'SimplePage/404.html', status=404)
+
+
+def handle_500(request):
+    return render(request, 'SimplePage/500.html', status=500)

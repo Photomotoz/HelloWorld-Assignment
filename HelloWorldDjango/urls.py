@@ -20,3 +20,6 @@ urlpatterns = [
     path('', RedirectView.as_view(pattern_name='registration')),
     path('SimplePage/', include('SimplePage.urls')),
 ]
+
+handler404 = 'SimplePage.views.handle_404'
+handler500 = 'SimplePage.views.handle_500'
