@@ -1,7 +1,6 @@
 from django.db import models
 from django.forms import ModelForm
-from localflavor.us.models import USStateField
-from localflavor.us.models import USZipCodeField
+from localflavor.us.models import USStateField, USZipCodeField
 
 
 class BaseModel(models.Model):

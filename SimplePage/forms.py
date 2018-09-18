@@ -1,7 +1,6 @@
 from django import forms
 from .models import Member
-from localflavor.us.forms import USStateSelect
-from localflavor.us.forms import USZipCodeField
+from localflavor.us.forms import USStateSelect, USZipCodeField
 
 
 class RegisterForm(forms.ModelForm):
